@@ -30,7 +30,7 @@ buildscript {
 plugins {
 	id "com.gradle.build-scan" version "1.8"
 	id "io.spring.dependency-management" version "1.0.7.RELEASE" apply false
-	id "org.jetbrains.kotlin.jvm" version "1.2.71" apply false
+	id "org.jetbrains.kotlin.jvm" version "1.3.50" apply false
 	id "org.jetbrains.dokka" version "0.9.18"
 	id "org.asciidoctor.convert" version "1.5.6"
 }
@@ -61,7 +61,7 @@ ext {
 	junitJupiterVersion  = "5.0.3"
 	junitPlatformVersion = "1.0.3"
 	junitVintageVersion  = "4.12.3"
-	kotlinVersion        = "1.2.71"
+	kotlinVersion        = "1.3.50"
 	log4jVersion         = "2.11.2"
 	nettyVersion         = "4.1.39.Final"
 	reactorVersion       = "Bismuth-SR17"
@@ -142,8 +142,8 @@ configure(allprojects) { project ->
 		kotlinOptions {
 			jvmTarget = "1.8"
 			freeCompilerArgs = ["-Xjsr305=strict"]
-			apiVersion = "1.1"
-			languageVersion = "1.1"
+			apiVersion = "1.3"
+			languageVersion = "1.3"
 		}
 	}
 
